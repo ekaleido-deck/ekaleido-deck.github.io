@@ -22,6 +22,14 @@ p {
   font-family: myFirstFontlight;
 }
 
+h1 {
+  line-height: 90px;
+}
+
+h5 {
+  line-height: 60px;
+}
+
 .mb {
   margin-bottom: 30px;
 }
