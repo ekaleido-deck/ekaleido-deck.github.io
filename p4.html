@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>ekaleido</title>
+    </head>
+<body>
+
+
+    <section class="headeres"> 
+        <div>
+              <img src="./assets/logoek.png" alt="" class="logohead">
+        </div>
+     
+  </section>
+
+
+  <section>
+         <div class="dflex crouselsection">
+            <div class="leftbox">
+                    <h1 class="who mb">INTERACTIVE <br> ADS</h1>
+                    <p class="mb">Creative can be of many types and can <br> consist many innovative ideas like <br> parallax effect, swiping, scratching, word <br> jumbles, etc.
+                    </p>
+ 
+                      <div class="dflex gapaarow mb">
+                         <div class="arrowDiv">
+                            <div class="text-right">
+                                <a href="./p3.html" class="text-noneline">
+                                <p class="mb10 orange text-noneline">Previous</p>
+                            </a>
+                            </div>
+                            <a href="./p4.html">
+                            <img src="./assets/leftarrowlong.png" class="arrowlink" alt="">
+                        </a>
+                         </div>
+
+                         <div class="arrowDiv">
+                            
+                            <div class=" ">
+                                <a href="./p7.html" class="text-noneline">
+                                <p class="mb10 orange ">Next</p>
+                            </a>
+                            </div>
+                            <a href="./p7.html">
+                                <img src="./assets/arrow.png" class="arrowlink" alt="">
+                            </a>
+                         </div>
+                      </div>
+
+                        <div class="crouselwidth">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item"><div>
+                                    <h1 class="crousel mb10">01</h1>
+                                    <p class="smallcrousel">Interactive <br>
+                                        Ads</p>
+                                </div></div>
+                                <div class="item"><div>
+                                    <h1 class="crousel mb10 black two">02</h1>
+                                    <p class="smallcrousel black two">Interactive <br>
+                                        Video</p>
+                                </div></div>
+                                <div class="item"><div>
+                                    <h1 class="crousel mb10">03</h1>
+                                    <p class="smallcrousel">Instagram <br>
+                                        Filters</p>
+                                </div></div>
+                                <div class="item"><div>
+                                    <h1 class="crousel mb10">04</h1>
+                                    <p class="smallcrousel">Interactive <br>
+                                        Ads</p>
+                                </div></div>
+                             
+                                
+                               
+                              
+                            </div>
+                        </div>
+                 
+            </div>
+
+            <div class="rightbxox">
+                    <img src="./assets/iframe.png" class="w100 h100" alt="">
+                    <img src="./assets/phoneimg.png" class="imgphone if" id="if1" alt="">
+                    <img src="./assets/Frame28.png" class="imgphone2 if" id="if3"  alt="">
+                    <img src="./assets/frameko.png" class="imgphone3 if" id="if2" alt="">
+                     <img src="./assets/BLACKBERRY.png" class="imgphone3 if" id="if4"  alt="">
+            </div>
+         </div>
+    </section> 
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <script>
+       var owl =  $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots: false,
+    
+        responsive:{
+            0:{
+                items:1,
+                dots: true,
+            },
+            600:{
+                items:3,
+                
+             
+    
+            },
+            1000:{
+                items:2.5
+            }
+        }
+    })
+
+    
+owl.owlCarousel();
+// Listen to owl events:
+owl.on('changed.owl.carousel', function(event) {
+   
+    for (let index = 0; index < document.getElementsByClassName("active").length; index++) {
+        document.getElementsByClassName("active")[index].style.color = "#CCC"  
+        document.getElementsByClassName("active")[index].style.transform = "scale(1)"  
+        
+    }
+     document.getElementsByClassName("active")[2].style.color = "black"
+
+
+
+var currentPosition = owl.find('.owl-item.active').index();
+
+if(currentPosition ===5 || currentPosition==1){
+    for (let index = 0; index < document.getElementsByClassName("if").length; index++) {
+        document.getElementsByClassName("if")[index].style.display = "none"
+    }
+
+    document.getElementById("if1").style.display="block"
+}
+
+else if(currentPosition ===6 || currentPosition ==2 ){
+    for (let index = 0; index < document.getElementsByClassName("if").length; index++) {
+        document.getElementsByClassName("if")[index].style.display = "none"
+    }
+
+    document.getElementById("if2").style.display="block"
+}
+
+
+else if(currentPosition ===3){
+    for (let index = 0; index < document.getElementsByClassName("if").length; index++) {
+        document.getElementsByClassName("if")[index].style.display = "none"
+    }
+
+    document.getElementById("if3").style.display="block"
+}
+
+else if(currentPosition ===4){
+    for (let index = 0; index < document.getElementsByClassName("if").length; index++) {
+        document.getElementsByClassName("if")[index].style.display = "none"
+    }
+
+    document.getElementById("if4").style.display="block"
+}
+
+})
+ </script>
+</body>
+</html>
