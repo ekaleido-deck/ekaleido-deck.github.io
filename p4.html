@@ -84,10 +84,28 @@
 
             <div class="rightbxox">
                     <img src="./assets/iframe.png" class="w100 h100" alt="">
-                    <img src="./assets/phoneimg.png" class="imgphone if" id="if1" alt="">
-                    <img src="./assets/Frame28.png" class="imgphone2 if" id="if3"  alt="">
-                    <img src="./assets/frameko.png" class="imgphone3 if" id="if2" alt="">
-                     <img src="./assets/BLACKBERRY.png" class="imgphone3 if" id="if4"  alt="">
+                    <!-- <img src="./assets/phoneimg.png" class="imgphone if" id="if1" alt="">
+                    <img src="./assets/Frame28.png" class="imgphone2 if" id="if3"  alt="">-->
+                    <img src="./assets/cookar.png" class="imgphone4 if" id="if2" alt=""> 
+
+
+                        <div id="if3"  class="if ">
+                            <img src="./assets/phoneimg.png" class="imgphone "  alt="">
+                            <video class="filterimg "  controls>
+                                <source  src="./assets/filter.mp4" type="video/mp4">
+                               
+                              </video>
+                        </div>
+                  
+                        <div id="if1" class="if" >
+                             <img src="./assets/blackframe.png" class="frameblack  " alt="">
+                             <video class="imgphone3 "  controls>
+                                <source  src="./assets/Blackberry.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                      
+                        <img src="./assets/imac.png" class="imgphone3 if" id="if4" alt="">
+                     <!-- <img src="./assets/BLACKBERRY.png" class="imgphone3 if" id="if4"  alt=""> -->
             </div>
          </div>
     </section> 
@@ -136,7 +154,7 @@ owl.on('changed.owl.carousel', function(event) {
 
 var currentPosition = owl.find('.owl-item.active').index();
 
-if(currentPosition ===5 || currentPosition==1){
+if(currentPosition ===4 || currentPosition==1){
     for (let index = 0; index < document.getElementsByClassName("if").length; index++) {
         document.getElementsByClassName("if")[index].style.display = "none"
     }
@@ -144,7 +162,7 @@ if(currentPosition ===5 || currentPosition==1){
     document.getElementById("if1").style.display="block"
 }
 
-else if(currentPosition ===6 || currentPosition ==2 ){
+else if(currentPosition ===5 || currentPosition ==2 ){
     for (let index = 0; index < document.getElementsByClassName("if").length; index++) {
         document.getElementsByClassName("if")[index].style.display = "none"
     }
@@ -162,6 +180,14 @@ else if(currentPosition ===3){
 }
 
 else if(currentPosition ===4){
+    for (let index = 0; index < document.getElementsByClassName("if").length; index++) {
+        document.getElementsByClassName("if")[index].style.display = "none"
+    }
+
+    document.getElementById("if4").style.display="block"
+}
+
+else if(currentPosition ===6){
     for (let index = 0; index < document.getElementsByClassName("if").length; index++) {
         document.getElementsByClassName("if")[index].style.display = "none"
     }

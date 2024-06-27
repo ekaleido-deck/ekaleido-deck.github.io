@@ -22,6 +22,7 @@
 
 p{
     font-family: myFirstFontlight;
+    line-height: 20px;
 }
 .mb{
  margin-bottom: 30px;
@@ -40,6 +41,30 @@ p{
 /* .h100{
     height: 100%;
 } */
+
+
+.gitar{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.ponitgitar{
+    position: absolute;
+    top: 60%;
+    display: flex;
+    gap: 13%;
+    width: 95%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    
+}
+.ponitgitar p{
+    font-family: myFirstFont;
+    font-weight: 700;
+    color: white;
+}
 
 .text-noneline{
     text-decoration: none;
@@ -190,13 +215,13 @@ display: flex;
 }
 
 .crousel{
-    font-size: 90px;
+    font-size: 57px;
   font-family: 700;
   font-family: myFirstFont;
 }
 
 .smallcrousel{
-    font-size: 20px;
+    font-size: 15px;
     font-family: 700;
     font-family: myFirstFont;
 }
@@ -397,8 +422,99 @@ text-align: right;
 }
 
 .imgphone3 {
+  position: absolute;     
+  top: 181px;
+  right: 80px;
+  width: 71%;
+}
+
+
+.f18{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: myFirstFont;
+}
+
+.foating{
+    float: right;
+    width: 50%;
+}
+
+.gitarcontent{
     position: absolute;
-    top: 121px;
-    right: 55px;
-    width: 81%;
+    bottom: -89px;
+    right: 50px;
+    text-align: right;
+}
+.gitararrow .xarrow {
+    width: 16%;
+}
+.arrowsplit{
+    justify-content: space-evenly;
+}
+.wheregitar{
+    
+    width: 92%;
+
+}
+
+.frameblack{
+    position: absolute;
+    top: 32%;
+    right: 15%;
+    width: 73%;
+}
+
+.imgphone4{
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    width: 71%;
+}
+
+.weeow{
+    width: 20%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right:30px;
+    top: 30px;
+}
+
+
+.weeow .arrowsplit{
+     gap: 30px;
+}
+.textleft{
+    text-align: left;
+}
+
+.contenticon2 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 81px;
+    width: 72%;
+    margin-left: 109px;
+}
+
+
+.contenticonfloat {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 35px;
+    float: right;
+    width: 70%;
+    padding-right: 110px;
+    margin-bottom: 41px;
+}
+
+
+.filterimg{
+    width: 33%;
+    right: 34%;
+    top: 18%;
+    position: absolute;
+
 }
