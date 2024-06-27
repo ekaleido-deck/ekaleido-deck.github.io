@@ -18,9 +18,10 @@
 }
 
 p {
-  font-family: myFirstFontlight;
   line-height: 20px;
+  font-family: myFirstFontlight;
 }
+
 .mb {
   margin-bottom: 30px;
 }
